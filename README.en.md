@@ -67,6 +67,11 @@ This project is intended to stay small and easy to understand. It is not an Obsi
 
 If the snippet becomes useful to more people, it may later evolve into a full Obsidian Community Theme.
 
+## Contributors
+
+- Andrew: visual design, usage experience, and project maintenance
+- OpenAI Codex: project organization, documentation collaboration, and open-source publishing
+
 ## License
 
 MIT

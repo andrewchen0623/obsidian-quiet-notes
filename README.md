@@ -67,6 +67,11 @@ Agent 会根据 README 自己读取安装方式。你只需要最后在 Obsidian
 
 如果后续有更多人使用，并且确实需要一键安装或更完整的主题适配，Quiet Notes 可能会继续升级成完整的 Obsidian Community Theme。
 
+## 贡献者
+
+- Andrew：样式设计、使用体验和项目维护
+- OpenAI Codex：项目整理、文档协作和开源发布
+
 ## 开源协议
 
 MIT
