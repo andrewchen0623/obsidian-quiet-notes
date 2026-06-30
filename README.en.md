@@ -54,12 +54,27 @@ If the `snippets` folder does not exist, create it manually under `.obsidian`.
 
 ## Screenshots
 
-Screenshots will be added soon.
+### Overall Reading Experience
+
+![Quiet Notes before and after overview](assets/screenshots/overview-before-after.png)
+
+### Long Notes And Highlights
+
+![Quiet Notes long note before and after](assets/screenshots/long-note-before-after.png)
+
+### Tables
+
+![Quiet Notes table before and after](assets/screenshots/table-before-after.png)
+
+### Detail View
+
+![Quiet Notes highlight and spacing before and after](assets/screenshots/highlight-spacing-before-after.png)
 
 ## Files
 
 - `quiet-notes.css`: the main CSS snippet
 - `README.md`: Chinese README
+- `assets/screenshots/`: screenshot examples
 
 ## Notes
 

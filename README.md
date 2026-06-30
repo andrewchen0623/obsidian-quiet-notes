@@ -54,12 +54,27 @@ Agent 会根据 README 自己读取安装方式。你只需要最后在 Obsidian
 
 ## 截图
 
-截图稍后补充。
+### 整体阅读效果
+
+![Quiet Notes before and after overview](assets/screenshots/overview-before-after.png)
+
+### 长文与高亮
+
+![Quiet Notes long note before and after](assets/screenshots/long-note-before-after.png)
+
+### 表格
+
+![Quiet Notes table before and after](assets/screenshots/table-before-after.png)
+
+### 局部细节
+
+![Quiet Notes highlight and spacing before and after](assets/screenshots/highlight-spacing-before-after.png)
 
 ## 文件说明
 
 - `quiet-notes.css`：主 CSS Snippet 文件
 - `README.en.md`：英文说明
+- `assets/screenshots/`：截图示意
 
 ## 说明
 
