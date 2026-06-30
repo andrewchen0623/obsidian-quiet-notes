@@ -1,0 +1,131 @@
+/* ============================================================
+   Quiet Notes for Obsidian
+
+   一个为 Obsidian 中文写作、日常记录和轻量卡片阅读设计的 CSS Snippet。
+
+   原则：所有会影响布局的排版度量，只在笔记正文容器里生效。
+   不把布局相关规则写到全局 body，避免影响 Obsidian 侧边栏、
+   拖动条和其他界面组件。
+   ============================================================ */
+
+/* ---------- 颜色：全局变量，适合在整个 Obsidian 里生效 ---------- */
+.theme-light {
+  --text-normal: #323232;
+  --text-muted: #6b6b6b;
+  --background-primary: #ffffff;
+  --code-background: #f3f3f3;
+  --text-highlight-bg: #ffffb4;
+  --blockquote-background-color: transparent;
+  --blockquote-color: #676a6f;
+  --blockquote-border-color: #bfc2c4;
+  --h1-color: #2a2a2a;
+  --h2-color: #2a2a2a;
+  --tbl-header-bg: #f3f3f3;
+  --tbl-border: #e6e6e6;
+}
+
+.theme-dark {
+  --text-normal: #d6d3cd;
+  --text-muted: #8a8a8a;
+  --background-primary: #1c1c1b;
+  --code-background: #2a2a28;
+  --text-highlight-bg: #8a7d3c;
+  --tbl-header-bg: #2a2a28;
+  --tbl-border: #3a3a38;
+}
+
+/* ---------- 正文排版：只作用在笔记正文区域 ---------- */
+.markdown-source-view.mod-cm6,
+.markdown-rendered {
+  --font-text-size: 15px;
+  --font-text: "PingFang SC", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", "Microsoft YaHei", sans-serif;
+  --line-height-normal: 1.8;
+  --p-spacing: 1.7em;
+  --h1-size: 1.6em;
+  --h1-weight: 700;
+  --h2-size: 1.3em;
+  --h2-weight: 650;
+  --h3-size: 1.12em;
+  --h3-weight: 600;
+  --h4-size: 1em;
+  --h4-weight: 600;
+  --heading-spacing: 1.9em;
+}
+
+/* ---------- 编辑器行距 ---------- */
+.markdown-source-view.mod-cm6 .cm-line {
+  padding-top: 0.28em;
+  padding-bottom: 0.28em;
+}
+
+/* ---------- 中文字距 ---------- */
+.markdown-source-view.mod-cm6 .cm-line,
+.markdown-rendered p,
+.markdown-rendered li,
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3 {
+  letter-spacing: 0.03em;
+}
+
+/* ---------- 下划线：限定正文区域 ---------- */
+.markdown-rendered u,
+.markdown-source-view u {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+/* ---------- 表格：限定正文区域 ---------- */
+.markdown-rendered table,
+.markdown-source-view table {
+  border-collapse: collapse;
+  border: 1px solid var(--tbl-border);
+}
+
+.markdown-rendered th,
+.markdown-rendered td,
+.markdown-source-view th,
+.markdown-source-view td {
+  font-size: 0.92em !important;
+  padding: 7px 14px !important;
+  border: 1px solid var(--tbl-border);
+  line-height: 1.6;
+}
+
+.markdown-rendered th,
+.markdown-source-view th,
+.markdown-rendered td:first-child,
+.markdown-source-view td:first-child {
+  background: var(--tbl-header-bg) !important;
+  font-weight: 600;
+}
+
+.markdown-rendered td:focus,
+.markdown-rendered th:focus,
+.markdown-source-view td:focus-within,
+.markdown-source-view th:focus-within {
+  box-shadow: inset 0 0 0 1px #323232;
+  outline: none;
+}
+
+/* ---------- 分隔线：限定正文区域 ---------- */
+.markdown-rendered hr,
+.markdown-source-view .cm-hr {
+  border: none !important;
+  border-top: 1px solid var(--tbl-border) !important;
+  height: 0 !important;
+  background: none !important;
+}
+
+/* ---------- 高亮：限定正文区域 ---------- */
+.markdown-rendered mark {
+  background: var(--text-highlight-bg);
+}
+
+/* ---------- 引用块 ---------- */
+.markdown-rendered blockquote {
+  background: transparent;
+  color: var(--blockquote-color);
+  border-left: 3px solid var(--blockquote-border-color);
+}
